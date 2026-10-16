@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# export PATH="/c/Program Files/nodejs:$PATH"
+
+pnpm lint-staged
+echo 校验完成
