@@ -8,12 +8,17 @@ module.exports = {
   },
   extends: ['eslint:recommended', 'plugin:vue/vue3-essential', 'plugin:prettier/recommended'],
   rules: {
-    'no-unused-vars': 'off',
-    'no-empty': 'off',
-    'vue/multi-word-component-names': 'off',
+    'no-unused-vars': 'warn',
+    'no-empty': 'warn',
+    'vue/multi-word-component-names': 'warn',
   },
   globals: {
     ElMessage: 'readonly',
     ElMessageBox: 'readonly',
   },
+  overrides: [
+    {
+      files: ['*.vue'],
+    },
+  ],
 }
